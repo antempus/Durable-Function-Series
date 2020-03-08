@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "targetId",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+
+    {
+      "type": "cosmosDB",
+      "name": "targets",
+      "direction": "in",
+      "sqlQuery": "SELECT * FROM c WHERE c.targetId = {targetId}",
+      "databaseName": "database",
+      "collectionName": "targets",
+      "connectionStringSetting": "CosmosDBConnection"
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 {
   "bindings": [
     {
+      "name": "starter",
+      "type": "orchestrationClient",
+      "direction": "in"
+    },
+    {
       "authLevel": "anonymous",
       "type": "httpTrigger",
       "direction": "in",
@@ -14,7 +19,7 @@
       "direction": "in",
       "sqlQuery": "SELECT * FROM c WHERE c.templateId = {templateId}",
       "databaseName": "database",
-      "collectionName": "container",
+      "collectionName": "templates",
       "connectionStringSetting": "CosmosDBConnection"
     },
     {
@@ -26,7 +31,7 @@
       "type": "cosmosDB",
       "name": "templateItemOut",
       "databaseName": "database",
-      "collectionName": "container",
+      "collectionName": "templates",
       "connectionStringSetting": "CosmosDBConnection",
       "direction": "out"
     }

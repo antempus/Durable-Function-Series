@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "input",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "item",
+      "databaseName": "database",
+      "collectionName": "items",
+      "connectionStringSetting": "CosmosDBConnection",
+      "direction": "out"
+    }
+  ]
+}
