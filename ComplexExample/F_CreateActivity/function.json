@@ -11,6 +11,9 @@
       "databaseName": "database",
       "collectionName": "items",
       "connectionStringSetting": "CosmosDBConnection",
+      "createIfNotExists": true,
+      "partitionKey": "id",
+      "collectionThroughput": 400,
       "direction": "out"
     }
   ]

@@ -1,15 +1,18 @@
 const df = require("durable-functions");
 
 module.exports = async function(context, request, templateItem) {
-  const { method, body: templateInput } = request;
-  const template = templateItem[0];
+  const {
+    method,
+    body: templateInput,
+    body: { state: inputState }
+  } = request;
+  const [template = {}] = templateItem;
   const client = df.getClient(context);
   switch (method) {
     case "PUT":
       context.bindings.templateItemOut = templateInput;
-      // ensure we don't overwrite state if we update
-      // TODO ensure state is not null
-      const { state } = template;
+      // ensure we don't overwrite state if we update an existing record
+      const { state = inputState } = template;
       const instanceId = await client.startNew(
         "F_Orchestrator",
         undefined,

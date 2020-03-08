@@ -13,6 +13,9 @@
       "sqlQuery": "SELECT * FROM c WHERE c.targetId = {targetId}",
       "databaseName": "database",
       "collectionName": "targets",
+      "createIfNotExists": true,
+      "partitionKey": "id",
+      "collectionThroughput": 400,
       "connectionStringSetting": "CosmosDBConnection"
     }
   ]
