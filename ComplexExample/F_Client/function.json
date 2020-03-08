@@ -1,11 +1,6 @@
 {
   "bindings": [
     {
-      "name": "starter",
-      "type": "orchestrationClient",
-      "direction": "in"
-    },
-    {
       "authLevel": "anonymous",
       "type": "httpTrigger",
       "direction": "in",
@@ -21,6 +16,11 @@
       "databaseName": "database",
       "collectionName": "templates",
       "connectionStringSetting": "CosmosDBConnection"
+    },
+    {
+      "name": "starter",
+      "type": "orchestrationClient",
+      "direction": "in"
     },
     {
       "type": "http",
