@@ -9,10 +9,9 @@ Contains the examples for each entry in the series that can be ran to understand
 - Support for learning and using Durable Functions with concrete examples of use cases and design patters
 
 ## Requirements
-- Access to Azure environment
-  - CosmosDB 
-  - Storage Account
-  - Function App (optional)
+- Follow [Getting Started](https://scm.starbucks.com/pcc/Deployments/pull/470) guide from Microsoft on setting up your 
+  environment
   
 ## How to Use
 Each folder within `Examples/` can be cloned and ran locally after the associated settings are added to the `local.settings.json`
+
