@@ -1,0 +1,39 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "template/{templateId:int}",
+      "methods": ["get", "put", "delete"]
+    },
+    {
+      "type": "cosmosDB",
+      "name": "templateItemIn",
+      "direction": "in",
+      "sqlQuery": "SELECT * FROM c WHERE c.templateId = {templateId}",
+      "databaseName": "database",
+      "collectionName": "templates",
+      "connectionStringSetting": "CosmosDBConnection"
+    },
+    {
+      "name": "starter",
+      "type": "orchestrationClient",
+      "direction": "in"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "templateItemOut",
+      "databaseName": "database",
+      "collectionName": "templates",
+      "connectionStringSetting": "CosmosDBConnection",
+      "direction": "out"
+    }
+  ]
+}
