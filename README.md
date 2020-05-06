@@ -18,4 +18,4 @@ Contains the examples for each entry in the series that can be ran to understand
 
 ## How to Use
 
-Each folder within `Examples/` can be cloned and ran locally after the associated settings are added to the `local.settings.json`
+Each folder within `Examples/` corresponds with a blog entry can be cloned and ran locally after the associated settings are added to the `local.settings.json`; the
