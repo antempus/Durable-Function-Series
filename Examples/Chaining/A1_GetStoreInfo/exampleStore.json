@@ -1,6 +1,7 @@
 {
   "id": 1234,
   "location": {
+    "name": "Microsoft Store - Bellevue Square",
     "streetAddress": "116 Bellevue Way NE",
     "city": "Bellevue",
     "state": "WA",
