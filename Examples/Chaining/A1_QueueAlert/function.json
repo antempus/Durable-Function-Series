@@ -1,0 +1,16 @@
+{
+  "bindings": [
+    {
+      "name": "alert",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "$return",
+      "queueName": "alert_queue",
+      "connection": "queue_connectionString"
+    }
+  ]
+}
