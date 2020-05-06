@@ -1,0 +1,9 @@
+{
+  "id": 1234,
+  "location": {
+    "streetAddress": "116 Bellevue Way NE",
+    "city": "Bellevue",
+    "state": "WA",
+    "zip": 98004
+  }
+}

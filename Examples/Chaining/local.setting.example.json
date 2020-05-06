@@ -1,0 +1,12 @@
+{
+  "comments": {
+    "values": "replace with the appropriate connection strings"
+  },
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "queue_connectionString": "",
+    "database_connectionString": ""
+  }
+}
