@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "name",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "rating",
+      "type": "cosmosDB",
+      "databaseName": "comapny_database",
+      "collectionName": "store_fleet",
+      "sqlQuery": "SELECT c.rating FROM c WHERE c.contentId = {id}",
+      "direction": "in",
+      "connectionStringSetting": "database_connectionString"
+    }
+  ]
+}
