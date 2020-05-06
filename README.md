@@ -1,7 +1,7 @@
 # Durable Function Series
 
-Series [Intro](https://antempus.dev/posts/durable-function-series/)
-Design Pattern - [Function Chaining](https://antempus.dev/posts/durable-function-series/)
+Series [Intro](https://antempus.dev/posts/durable-function-series/)  
+Design Pattern - [Function Chaining](https://antempus.dev/posts/durable-function-series/)  
 
 ## About
 
