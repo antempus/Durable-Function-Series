@@ -10,7 +10,7 @@
  */
 async function clientFunc(context, req) {
   const client = df.getClient(context);
-  const { param: { id }, query: { threshold } } = req;
+  const { param: { id, threshold } } = req;
   const instanceId = await client.startNew('A1_ChainingOrchestrator', undefined, { id, threshold });
   context.log(`Started A1_ChainingOrchestrator with ID: '${instanceId}'`);
   return client.createCheckStatusResponse(context.bindingData.req, instanceId);
